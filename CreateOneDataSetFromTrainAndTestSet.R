@@ -5,19 +5,31 @@ library("stringr")
 trainFeatures <- read.table("UCI HAR Dataset/train/X_train.txt", quote="\"")
 trainClass <- read.table("UCI HAR Dataset/train/Y_train.txt", quote="\"")
 
+testFeatures <- read.table("UCI HAR Dataset/test/X_test.txt", quote="\"")
+testClass <- read.table("UCI HAR Dataset/test/Y_test.txt", quote="\"")
+
+mergedClass <- rbind(trainClass,testClass)
+
+names(mergedClass) <- c("activityLabel")
+
+mergedFeatures <- rbind(trainFeatures,testFeatures)
 
 features <- read.table("UCI HAR Dataset/features.txt", quote="\"")
 colnames(features) <- c("ID","FeatureName")
-
 features[,2] <- str_replace_all(features[,2],"\\(\\)","")
-
 features[,2] <- str_replace_all(features[,2],"\\(","_")
 features[,2] <- str_replace_all(features[,2],"\\)","_")
-
 features[,2] <- str_replace_all(features[,2],",","_")
 
-colnames(trainFeatures) <- features[,2] 
+colnames(mergedFeatures) <- features[,2] 
 
+mergedDataset <- cbind(mergedFeatures,mergedClass)
 
-#names(features)[1] <- "ID"
-#names(features)[2] <- "FeatureName"
+rm("features")
+rm("mergedClass")
+rm("mergedFeatures")
+rm("testClass")
+rm("testFeatures")
+rm("trainClass")
+rm("trainFeatures")
+
