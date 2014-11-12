@@ -9,3 +9,5 @@
 data.zip
 .Rproj.user
 UCI HAR Dataset/*
+
+*.sublime-workspace
