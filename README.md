@@ -23,5 +23,4 @@ These two R files are sourced in [run_analysis.R](run_analysis.R).
 [This file](CreateOneDataSetFromTrainAndTestSet.R)  reads different train and test files and merged them to one data. 
 Feature,Class and subject data files are read and combined to one dataset here.
 Also features.txt file read and features names are cleaned and changed to descriptive names here.
-After these, train and test dataset are merged to one dataset.
 At last, temporary variables are cleaned.
