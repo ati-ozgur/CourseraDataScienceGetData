@@ -8,19 +8,19 @@ source("CreateOneDataSetFromTrainAndTestSet.R")
 
 #2.Extracts only the measurements on the mean and standard deviation for each measurement.
 
-wantedFeatures <- unique( which(!is.na(str_match(names(mergedDataset),"Mean|mean|Std|std|activityLabel"))))
+wantedFeatures <- unique( which(!is.na(str_match(names(mergedDataset),"Mean|mean|Std|std|activityLabel|subject"))))
 mergedDataset_extracted <- mergedDataset[,wantedFeatures]
 
 
 
 #3.Uses descriptive activity names to name the activities in the data set
 
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 1,87] <- "WALKING"
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 2,87] <- "WALKING_UPSTAIRS"
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 3,87] <- "WALKING_DOWNSTAIRS"
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 4,87] <- "SITTING"
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 5,87] <- "STANDING"
-mergedDataset_extracted[mergedDataset_extracted$activityLabel == 6,87] <- "LAYING"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 1,88] <- "WALKING"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 2,88] <- "WALKING_UPSTAIRS"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 3,88] <- "WALKING_DOWNSTAIRS"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 4,88] <- "SITTING"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 5,88] <- "STANDING"
+mergedDataset_extracted[mergedDataset_extracted$activityLabel == 6,88] <- "LAYING"
 
 
 
