@@ -6,7 +6,7 @@ It downloads [UCI HAR Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Acti
 
 
 The most important file is [run_analysis.R](run_analysis.R) file which contains all necessary code. 
-Other important file is [cookbook.txt](cookbook.txt) file which explains features in dataset.
+Other important file is [codebook.txt](codebook.txt) file which explains features in dataset.
 Some of the code are extracted to other files for readibility purposes. 
 
 - [downloadDataFile.R](downloadDataFile.R) 
