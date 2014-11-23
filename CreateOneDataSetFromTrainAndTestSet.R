@@ -20,6 +20,8 @@ features[,2] <- str_replace_all(features[,2],"\\(\\)","")
 features[,2] <- str_replace_all(features[,2],"\\(","_")
 features[,2] <- str_replace_all(features[,2],"\\)","_")
 features[,2] <- str_replace_all(features[,2],",","_")
+features[,2] <- str_replace_all(features[,2],"-","_")
+
 
 colnames(mergedFeatures) <- features[,2] 
 
