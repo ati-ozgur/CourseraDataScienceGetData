@@ -34,3 +34,6 @@ mergedDataset_extracted[mergedDataset_extracted$activityLabel == 6,88] <- "LAYIN
 tidyData <- mergedDataset_extracted %>% 
   group_by(activityLabel,subject) %>%
   summarise_each(funs(mean))
+
+
+write.table(tidyData,file="tidyData.txt",row.name=FALSE )
