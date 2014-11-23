@@ -36,4 +36,4 @@ tidyData <- mergedDataset_extracted %>%
   summarise_each(funs(mean))
 
 
-write.table(tidyData,file="tidyData.txt",row.name=FALSE )
+write.table(tidyData,file="tidyData.txt",row.names=FALSE ,fileEncoding = "UTF-8")
