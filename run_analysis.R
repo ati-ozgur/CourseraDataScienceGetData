@@ -7,9 +7,7 @@ source("CreateOneDataSetFromTrainAndTestSet.R")
 
 
 #2.Extracts only the measurements on the mean and standard deviation for each measurement.
-
-a <- mergedDataset  %>% 
-    select(contains('std'))
+source("ExtractMeasurementsMeanStandardDeviation.R")
 
 
 #3.Uses descriptive activity names to name the activities in the data set

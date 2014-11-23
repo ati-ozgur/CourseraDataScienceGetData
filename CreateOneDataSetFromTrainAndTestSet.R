@@ -21,11 +21,19 @@ features[,2] <- str_replace_all(features[,2],"\\(","_")
 features[,2] <- str_replace_all(features[,2],"\\)","_")
 features[,2] <- str_replace_all(features[,2],",","_")
 features[,2] <- str_replace_all(features[,2],"-","_")
+features[,2] <- str_replace_all(features[,2],"Acc","Accelerometer")
+features[,2] <- str_replace_all(features[,2],"Gyro","Gyroscope")
+
+
+
+
 
 
 colnames(mergedFeatures) <- features[,2] 
 
 mergedDataset <- cbind(mergedFeatures,mergedClass)
+
+
 
 rm("features")
 rm("mergedClass")
