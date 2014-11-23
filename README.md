@@ -5,7 +5,8 @@ This repository created for [Getting and Cleaning Data Project](https://class.co
 It downloads [UCI HAR Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) from internet and runs analysis wanted in the project.
 
 
-The most important file is [run_analysis.R](run_analysis.R) file which contains all necessary code. 
+
+The most important file is [run_analysis.R](run_analysis.R) file which contains all necessary code to create wanted output file [tidyData.txt](tidyData.txt). 
 Other important file is [codebook.txt](codebook.txt) file which explains features in dataset.
 Some of the code are extracted to other files for readibility purposes. 
 
