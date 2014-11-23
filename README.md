@@ -2,7 +2,7 @@ Coursera Data Science Track - Getting and Cleaning Data Course Project
 ==========================
 
 This repository created for [Getting and Cleaning Data Project](https://class.coursera.org/getdata-009).
-It downloads "UCI HAR Dataset" from internet and runs analysis wanted in the project.
+It downloads [UCI HAR Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) from internet and runs analysis wanted in the project.
 
 
 The most important file is [run_analysis.R](run_analysis.R) file which contains all necessary code. 
